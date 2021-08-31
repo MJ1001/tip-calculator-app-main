@@ -10,7 +10,7 @@ window.onload = function(){
     const amt = document.getElementById("amt");
     const total = document.getElementById("total");
     const reset = document.getElementById("reset");
-    let billAmt;
+    let billAmt=0;
     let tip;
     let customAmt;
     let pNum;
@@ -24,10 +24,10 @@ window.onload = function(){
     
     tip_btn_5.addEventListener("click" ,() => {
         console.log("tip-5 works");
-        if(billAmt>0){
+        
         tip = billAmt*0.05;
         amt.innerHTML = tip;
-        billTotal = parseFloat(billAmt) + parseFloat(tip);}else{alert("enter a bill amount")}
+        billTotal = parseFloat(billAmt) + parseFloat(tip);
 
     });
     tip_btn_10.addEventListener("click" ,() => {
@@ -83,8 +83,8 @@ window.onload = function(){
     reset.addEventListener("click" ,() => {
         bill.value = 0;
         people.value=0;
-        amt.innerHTML = 0;
-        total.innerHTML =0;
+        amt.innerHTML = "$ 0.00";
+        total.innerHTML ="$ 0.00";
 
     });
 
