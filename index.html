@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="./calc.js"></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; display:none; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main_container">
+    <h1>SPLI<span>TTER</span></h1>
+    <div class="container">
+      <div class="left_section">
+        <section class="bill_section">
+          <label for="bill">Bill</label>
+          <input type = "text" id="bill" name="bill" placeholder="0" >        
+        </section>
+        <section class="tip_section">
+          <label for = "tip">Select Tip %</label>
+          <div class="tip" id="tip">
+            <button class="tip_btn" id="tip_btn_5">5%</button>
+            <button class="tip_btn" id="tip_btn_10">10%</button>
+            <button class="tip_btn" id="tip_btn_15">15%</button>
+            <button class="tip_btn" id="tip_btn_25">25%</button>
+            <button class="tip_btn" id="tip_btn_50">50%</button>
+            <input type="text" placeholder="Custom" class="tip_btn custom" id="tip_btn_custom">
+          </div>
+        </section>
+      <section class="people_section">
+        <label for="people">Number of People</label>
+        <input type="text" id="people" placeholder="0">
+      </section>
+      </div>
+      <div class="right_section">
+        <div class="tip_amt">
+          <h3>Tip Amount<span>/ person</span></h3>
+          <h2 id="amt">$ 0.00</h2>
+        </div>
+        <div class="tip_total">
+          <h3>Total<span>/ person</span></h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Munjal Prajapati</a>.
+  </div>
+  <!-- <script>
+    function getBillAmount(){
+      const bill = document.getElementById("bill");
+      console.log(bill.value);
+    }
+  </script> -->
+</body>
+</html>
